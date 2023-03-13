@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# insurance.sh
+
+# Art Song
+
+# CPSC 298
+
+echo "This is an INSURANCE program"
+
+read -p "What is your age? " age
+
+if [[ $age -lt 16 ]]; then
+
+  echo "Too young."
+
+elif [[ $age -ge 16 && $age -le 24 ]]; then
+
+  echo "Insurance price is 4800."
+
+elif [[ $age -ge 25 && $age -le 39 ]]; then
+
+  echo "Insurance price is 2350."
+
+else
+
+  echo "Insurance price 2100."
+
+fi
